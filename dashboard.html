@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - StreamScape</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4f46e5">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192x192.png">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <span class="gradient-text">StreamScape</span>
+                </a>
+                <nav class="dashboard-nav">
+                    <ul>
+                        <li><a href="#discover" class="active">Descubrir</a></li>
+                        <li><a href="#messages">Mensajes</a></li>
+                        <li><a href="#calls">Llamadas</a></li>
+                        <li><a href="#profile">Perfil</a></li>
+                    </ul>
+                </nav>
+                <div class="user-menu">
+                    <div class="user-avatar">U</div>
+                    <span class="user-name">Usuario</span>
+                    <button class="btn btn-outline btn-sm" onclick="logout()">Salir</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <div class="container">
+                <div class="dashboard-grid">
+                    <aside class="sidebar">
+                        <div class="sidebar-section">
+                            <h3>Conexiones Recientes</h3>
+                            <div class="connection-list">
+                                <div class="connection-item">
+                                    <div class="avatar">JS</div>
+                                    <div class="connection-info">
+                                        <h4>Jessica Smith</h4>
+                                        <p>En línea</p>
+                                    </div>
+                                    <div class="connection-actions">
+                                        <button class="icon-btn">💬</button>
+                                        <button class="icon-btn">📹</button>
+                                    </div>
+                                </div>
+                                <div class="connection-item">
+                                    <div class="avatar">MJ</div>
+                                    <div class="connection-info">
+                                        <h4>Michael Johnson</h4>
+                                        <p>Hace 5 min</p>
+                                    </div>
+                                    <div class="connection-actions">
+                                        <button class="icon-btn">💬</button>
+                                        <button class="icon-btn">📹</button>
+                                    </div>
+                                </div>
+                                <div class="connection-item">
+                                    <div class="avatar">AL</div>
+                                    <div class="connection-info">
+                                        <h4>Ana López</h4>
+                                        <p>Hace 1 hora</p>
+                                    </div>
+                                    <div class="connection-actions">
+                                        <button class="icon-btn">💬</button>
+                                        <button class="icon-btn">📹</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="main-content">
+                        <div class="welcome-section">
+                            <h1>¡Bienvenido a StreamScape!</h1>
+                            <p>Descubre nuevas personas y comienza conversaciones interesantes</p>
+                        </div>
+
+                        <div class="discover-section">
+                            <h2>Personas que podrían interesarte</h2>
+                            <div class="discover-grid">
+                                <div class="profile-card">
+                                    <div class="profile-image">
+                                        <div class="avatar large">EM</div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <h3>Emma Martinez</h3>
+                                        <p class="age">28 años</p>
+                                        <p class="location">Madrid, España</p>
+                                        <div class="interests">
+                                            <span class="tag">Fotografía</span>
+                                            <span class="tag">Viajes</span>
+                                            <span class="tag">Arte</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-actions">
+                                        <button class="btn btn-outline">Ver Perfil</button>
+                                        <button class="btn btn-primary">Conectar</button>
+                                    </div>
+                                </div>
+
+                                <div class="profile-card">
+                                    <div class="profile-image">
+                                        <div class="avatar large">DG</div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <h3>David García</h3>
+                                        <p class="age">32 años</p>
+                                        <p class="location">Barcelona, España</p>
+                                        <div class="interests">
+                                            <span class="tag">Música</span>
+                                            <span class="tag">Tecnología</span>
+                                            <span class="tag">Deportes</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-actions">
+                                        <button class="btn btn-outline">Ver Perfil</button>
+                                        <button class="btn btn-primary">Conectar</button>
+                                    </div>
+                                </div>
+
+                                <div class="profile-card">
+                                    <div class="profile-image">
+                                        <div class="avatar large">SR</div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <h3>Sofia Rodriguez</h3>
+                                        <p class="age">26 años</p>
+                                        <p class="location">Valencia, España</p>
+                                        <div class="interests">
+                                            <span class="tag">Literatura</span>
+                                            <span class="tag">Cocina</span>
+                                            <span class="tag">Yoga</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-actions">
+                                        <button class="btn btn-outline">Ver Perfil</button>
+                                        <button class="btn btn-primary">Conectar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Suscripción - StreamScape</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="gradient-text">StreamScape</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#features">Características</a></li>
+                    <li><a href="index.html#pricing">Precios</a></li>
+                    <li><a href="index.html#about">Acerca de</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn btn-outline">Mi Cuenta</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="subscription-section">
+            <div class="container">
+                <h2>Mi Suscripción</h2>
+                
+                <div id="subscription-info">
+                    <!-- El contenido se cargará dinámicamente con JavaScript -->
+                    <div class="loading">Cargando información de suscripción...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 StreamScape. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de cancelación -->
+    <div id="cancel-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Cancelar Suscripción</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <p>¿Estás seguro de que deseas cancelar tu suscripción? Perderás acceso a todas las funciones premium al final del período de facturación actual.</p>
+            <div class="modal-actions">
+                <button id="cancel-cancel" class="btn btn-outline">No, mantener suscripción</button>
+                <button id="confirm-cancel" class="btn btn-danger">Sí, cancelar suscripción</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de actualización de pago -->
+    <div id="payment-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Actualizar Método de Pago</h3>
+                <button id="close-payment-modal" class="close-modal">&times;</button>
+            </div>
+            <form id="update-payment-form">
+                <div class="form-group">
+                    <label for="update-card-element">Nueva información de pago</label>
+                    <div class="card-element" id="update-card-element">
+                        <!-- Simulación de campo de tarjeta -->
+                        <input type="text" placeholder="Número de tarjeta" maxlength="16" style="margin-bottom: 0.5rem; width: 100%;">
+                        <div style="display: flex; gap: 0.5rem;">
+                            <input type="text" placeholder="MM/AA" style="width: 50%;">
+                            <input type="text" placeholder="CVC" style="width: 50%;">
+                        </div>
+                    </div>
+                    <div id="update-card-errors" class="error-message"></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Actualizar método de pago</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
