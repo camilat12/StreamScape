@@ -1,0 +1,7 @@
+cd streamscape
+git init
+git add .
+git commit -m "Initial commit: StreamScape app"
+git remote add origin https:/camilat12/github.com//streamscape.git
+git branch -M main
+git push -u origin main
